@@ -34,8 +34,9 @@ UI：Photoshop
 ![展示图2](%E5%B1%95%E7%A4%BA2.jpg)
 ![展示图3](%E5%B1%95%E7%A4%BA3.jpg)
 
-#### 授权版展示
+#### 授权版项目
 
+[https://gitee.com/xfwlclub/glass-UIAuth](https://gitee.com/xfwlclub/glass-UIAuth)
 
 
 #### 特技
