@@ -47,23 +47,27 @@ $(window).on('load',function handlePreloader(){
     target.style.transform=`rotate(${val}deg)`
     }
     window.onload=clock()
-    $(function(){
-    var xf_time=new Date
-    var xf_hour=xf_time.getHours()+':'
-    var xf_branch=xf_time.getMinutes()
-    var myDate=new Date
-    var xf_year=myDate.getFullYear()
-    var xf_mon=myDate.getMonth()+1;
-    var xf_date=myDate.getDate()
-    var xf_week=new Date
-    var week=xf_week.getDay()
-    var weeks=['星期天','星期一','星期二','星期三','星期四','星期五','星期六']
-    var RPxf_hour = xf_hour < 10 ? '0' + xf_hour : xf_hour
-    var RPxf_branch = xf_branch < 10 ? '0' + xf_branch : xf_branch
-    $(".xf_time_1").html(RPxf_hour + RPxf_branch)
-    $(".xf_time_2").html(xf_year+"年"+xfppp(xf_mon)+"月"+xfppp(xf_date)+"日 ")
-    $(".xf_time_3").html(weeks[week])
-    })
+    function xf_timery() {
+        $(function(){
+        var xf_time=new Date
+        var xf_hour=xf_time.getHours()+':'
+        var xf_branch=xf_time.getMinutes()
+        var myDate=new Date
+        var xf_year=myDate.getFullYear()
+        var xf_mon=myDate.getMonth()+1;
+        var xf_date=myDate.getDate()
+        var xf_week=new Date
+        var week=xf_week.getDay()
+        var weeks=['星期天','星期一','星期二','星期三','星期四','星期五','星期六']
+        var RPxf_hour = xf_hour < 10 ? '0' + xf_hour : xf_hour
+        var RPxf_branch = xf_branch < 10 ? '0' + xf_branch : xf_branch
+        $(".xf_time_1").html(RPxf_hour + RPxf_branch)
+        $(".xf_time_2").html(xf_year+"年"+xfppp(xf_mon)+"月"+xfppp(xf_date)+"日 ")
+        $(".xf_time_3").html(weeks[week])
+        })
+    }
+    xf_timery()
+    setInterval(xf_timery, 1000)
     function xfppp(s){
     return s<10?'0'+s:s;
     }
