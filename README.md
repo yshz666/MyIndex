@@ -7,8 +7,11 @@
 
 >主页的 Logo 字体已经过压缩，若用本站 Logo 以外的字母会变回默认字体，这里是 [完整字体](https://file.imsyy.top/font/Pacifico-Regular.ttf)
 
+ 原来用的热铁盒托管到期了，用不起了,勉强能保留
+> [codefishの主页](https://codefish.rth5.com)
 
-- [codefishの主页](https://codefish.rth5.com)
+
+> [备用路线](https://yshz666.github.io/MyIndex)
 
 
 ### 致谢
